@@ -1,1 +1,1 @@
-[Live Demo](http://localhost:3000)
+[Live Demo](https://vibrant-ritchie-fa61d4.netlify.app/)

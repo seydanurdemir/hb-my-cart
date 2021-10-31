@@ -10,10 +10,10 @@ import { ADD_TO_CART, REMOVE_FROM_CART } from '../actions/actionTypes';
 
 const initState = {
     products: [
-        { productId: 1, title: 'Apple iPhone 11 Pro Maxi', desc: "Description1", brand: "Apple", color: "Black", price: 100, img: Item1 },
-        { productId: 2, title: 'iPhone 11', desc: "Description2", brand: "Apple", color: "Yellow", price: 200, img: Item2 },
-        { productId: 3, title: 'iPhone 11 Kırmızı', desc: "Description3", brand: "Apple", color: "Red", price: 300, img: Item3 },
-        { productId: 4, title: 'Apple Telefon', desc: "Description4", brand: "Apple", color: "Purple", price: 400, img: Item4 }
+        { productId: 1, title: 'Apple iPhone 11 Pro Maxi', desc: "Max 11 iPhone (Max 2 Line)", brand: "Apple", color: "Black", price: 100, img: Item1 },
+        { productId: 2, title: 'iPhone 11', desc: "", brand: "Apple", color: "Yellow", price: 200, img: Item2 },
+        { productId: 3, title: 'iPhone 11 Kırmızı', desc: "", brand: "Apple", color: "Red", price: 300, img: Item3 },
+        { productId: 4, title: 'Apple Telefon', desc: "", brand: "Apple", color: "Purple", price: 400, img: Item4 }
     ],
     addedProducts: [],
     totalPrice: 0

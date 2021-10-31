@@ -13,13 +13,13 @@ class Cart extends Component {
             <ul className="collection">
                 {
                     this.props.addedProducts.map(product => {
-                        return (<li className="collection-item avatar" key={product.productId}>
+                        return (<li className="collection-item" key={product.productId}>
                             <div className="item-img">
                                 <img src={product.img} alt={product.img} className="" />
                             </div>
                             <div className="item-desc">
                                 <span className="title">{product.title}</span>
-                                <button onClick={() => { this.handleClick(product.productId) }}>Remove from Cart</button>
+                                <button className="btn-outline-small" onClick={() => { this.handleClick(product.productId) }}>Kaldır</button>
                             </div>
                         </li>
                         )
@@ -27,7 +27,7 @@ class Cart extends Component {
                 }
                 {
                     this.props.addedProducts.length === 0 &&
-                    <li style={{ color: "#000", textAlign: "center", float: "none" }}>Cart is Empty</li>
+                    <li style={{ color: "#000", textAlign: "center", float: "none" }}>Sepetin şu an boş</li>
                 }
             </ul>
         );

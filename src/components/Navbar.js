@@ -17,31 +17,29 @@ class Navbar extends Component {
         return (
             <nav className="nav-wrapper">
                 <div className="container">
-                    <Link to="/" className="brand-logo">HepsiBurada</Link>
+                    <Link to="/" className="brand-logo orange-text"><b>hepsiburada</b></Link>
                     <ul className="right">
                         <li>
                             <form>
-                                <div className="input-field" style={{ marginRight: "20vh", width: "80vh" }}>
-                                    <input id="search" type="search" required style={{ height: "auto" }} placeholder="Search" />
-                                    <label className="label-icon" htmlFor="search"><i className="material-icons">Search</i></label>
-                                    <i className="material-icons">Close</i>
+                                <div className="input-field" style={{ marginRight: "20vh", width: "70vh" }}>
+                                    <input type="search" id="search" className="form-control search-form" placeholder="25 milyon'dan fazla ürün içerisinde ara" />
+                                    <i className="material-icons">search</i>
                                 </div>
                             </form>
                         </li>
                         <li>
-                            <div onClick={this.toggle} style={{ cursor: "pointer" }}>My Cart
-                                {
-                                    this.props.addedProducts.length > 0 &&
+                            <Link to="#" onClick={this.toggle} style={{ cursor: "pointer" }}>Sepetim
+                                {this.props.addedProducts.length > 0 &&
                                     <span className="notifications" style={{ position: "absolute", padding: 4, background: "red", textAlign: "center", color: "white" }}>
                                         {this.props.addedProducts.length}
                                     </span>
                                 }
-                            </div>
+                            </Link>
                         </li>
                     </ul>
                     {
                         this.state.popoverOpen &&
-                        <div className="popover right" style={{ position: "absolute", display: "inline-block", marginTop: 65, left: "74%" }}>
+                        <div className="popover right" style={{ position: "absolute", display: "inline-block", marginTop: 42, left: "66.7%" }}>
                             <Cart />
                         </div>
                     }

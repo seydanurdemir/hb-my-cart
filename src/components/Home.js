@@ -21,14 +21,13 @@ class Home extends Component {
                         <p>{product.desc}</p>
                         <p><b>{product.price} ₺</b></p>
                         <br />
-                        <button className="waves-effect waves-light btn-small red" onClick={() => { this.handleClick(product.productId) }} disabled={isExist}>Add to Cart</button>
+                        <button className="btn-small orange lighten orange-text full-width" onClick={() => { this.handleClick(product.productId) }} disabled={isExist}>Sepete Ekle</button>
                     </div>
                 </div>
             );
         });
         return (
             <div className="container">
-                <br />
                 <div className="box">
                     {productList}
                 </div>
